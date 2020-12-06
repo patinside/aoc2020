@@ -3,7 +3,7 @@
 
 (defn parse-in
   []
-  (map #(Integer/parseInt %)(str/split-lines (slurp "resources/day1-1"))))
+  (map #(Integer/parseInt %)(str/split-lines (slurp "resources/day1"))))
 
 (defn get-pair [nb-coll]
   (rest

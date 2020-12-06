@@ -3,7 +3,7 @@
 
 (defn parse-in
   []
-  (map #(str/split % #" ") (str/split-lines (slurp "resources/day2-1")) ))
+  (map #(str/split % #" ") (str/split-lines (slurp "resources/day2")) ))
 
 (defn extract-range
   [line]
@@ -11,8 +11,7 @@
 
 (defn in-range?
   [range number]
-  (and
-    (>=  (second range) number (first range))))
+  (>= (second range) number (first range)))
 
 (defn valid-line-1?
   [line]
