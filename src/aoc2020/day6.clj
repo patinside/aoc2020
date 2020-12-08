@@ -4,7 +4,7 @@
 
 (defn parse-in
   []
-  (str/split (slurp "resources/day6''") #"\n\n"))
+  (str/split (slurp "resources/day6") #"\n\n"))
 
 (defn remove-return-in-groups
   [groups]
